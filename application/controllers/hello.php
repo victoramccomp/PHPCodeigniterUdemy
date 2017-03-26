@@ -2,6 +2,11 @@
 
 class Hello extends CI_Controller {
     
+    public function dbtest() {
+        //
+        $this->load->database();
+    }
+
     public function one($name) {
         //
         $this->load->helper("url");
