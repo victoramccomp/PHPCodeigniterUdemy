@@ -15,6 +15,20 @@ class Hello extends CI_Controller {
         $this->load->view('one', $data);   
     }
 
+    public function libs() {
+        //
+        $this->load->library("table");
+
+        $this->table->set_heading(array("Username", "Age"));
+
+        $this->table->add_row(array("Victor", 27));
+        $this->table->add_row(array("Yasmine", 25));
+        $this->table->add_row(array("Leandro", 27));
+        $this->table->add_row(array("Bruna", 20));
+
+        echo $this->table->generate();
+    }
+
     public function helpers() {
         //
         $this->load->helper("html");
