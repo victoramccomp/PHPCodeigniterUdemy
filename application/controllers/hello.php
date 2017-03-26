@@ -4,6 +4,8 @@ class Hello extends CI_Controller {
     
     public function one($name) {
         //
+        $this->load->helper("url");
+
         $this->load->view('header');
 
         $this->load->model("hello_model", "model");
