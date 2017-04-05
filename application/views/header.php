@@ -9,6 +9,7 @@
 	<div id='heading'>
 		<h1><a href='<?php echo site_url("post") ?>'>My Blog</a></h1>
 		<div id='links'>
-			<a href='<?php echo site_url("post") ?>'>Home</a> | 
+			<a href='<?php echo site_url("post") ?>'>Home</a> |
+            <a href='<?php echo site_url("post/show_add") ?>'>Add Post</a> 
 		</div>
 	</div>
