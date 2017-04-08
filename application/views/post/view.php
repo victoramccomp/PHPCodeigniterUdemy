@@ -1,6 +1,3 @@
-<!--Open foreach (ugly)-->
-<?php foreach($posts as $post) { ?>
-
 <div class="post">
     <h2 class="post-title">
         <a href="<?php echo site_url("post/view/{$post['id_post']}"); ?>">
@@ -13,8 +10,8 @@
     <div class="post-content">
         <?php echo nl2br($post['text']);?>
     </div>
-
+    <br>
+    <a href="<?php echo site_url("post/delete/{$post['id_post']}"); ?>">
+        <button>Delete</button>
+    </a>
 </div>
-
-<?php } ?>
-<!--Close foreach (UGLY)-->

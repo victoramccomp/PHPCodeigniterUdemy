@@ -6,19 +6,36 @@ class Post extends CI_Controller {
         parent::__construct();
         $this->load->helper("url");
         $this->load->database();
+        $this->load->model("post_model", "model");
     }
 
     public function index() {
       
         $this->load->view("header");
 
-        $this->load->model("post_model", "model");
         $posts = $this->model->getAll();
 
         $data = array("posts" => $posts);
         $this->load->view("post/all", $data);
-        
+
         $this->load->view("footer");
+    }
+
+    public function view($id_post) {
+
+        $post = $this->model->get($id_post);
+
+        if($post) {
+            $this->load->view("header");
+
+            $data = array("post" => $post);
+            $this->load->view("post/view.php", $data);
+
+            $this->load->view("footer");
+        } else {
+            show_404();
+        }
+
     }
 
     public function show_add() {
@@ -45,4 +62,9 @@ class Post extends CI_Controller {
       redirect(site_url("post"));
     }
 
+    public function delete($id_post) {
+
+        $this->model->delete($id_post);
+        redirect(site_url("post"));
+    }
 }
