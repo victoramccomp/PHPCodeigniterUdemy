@@ -11,6 +11,13 @@ class Post extends CI_Controller {
     public function index() {
       
         $this->load->view("header");
+
+        $this->load->model("post_model", "model");
+        $posts = $this->model->getAll();
+
+        $data = array("posts" => $posts);
+        $this->load->view("post/all", $data);
+        
         $this->load->view("footer");
     }
 
