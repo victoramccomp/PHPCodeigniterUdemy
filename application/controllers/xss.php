@@ -3,8 +3,8 @@
 class XSS extends CI_Controller {
 
     public function index() {
-
-        $this->load->helper("form");
+        //Set at config/autoload.php in helpers section
+        //$this->load->helper("form");
 
         echo form_open("xss/show", array("method" => "POST"));
         echo form_textarea(array("name" => "code"));

@@ -42,4 +42,18 @@ class Hello extends CI_Controller {
 
         echo heading("This is heading");
     }
+
+    public function config() {
+
+        $this->config->load("test");
+        echo $this->config->item("country-code");
+        echo "<br>";
+
+        $this->config->load("new", true);
+        echo $this->config->item("language");
+        echo "<br>";
+        echo $this->config->item("language", "new");
+        echo "<br>";
+        echo $this->config->item("country", "new");
+    }
 }
