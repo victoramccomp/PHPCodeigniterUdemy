@@ -147,3 +147,18 @@ INFO - 2017-04-26 02:14:56 --> Loader Class Initialized
 INFO - 2017-04-26 02:14:56 --> Helper loaded: form_helper
 INFO - 2017-04-26 02:14:56 --> Controller Class Initialized
 ERROR - 2017-04-26 02:14:56 --> Unable to load the requested class: Log
+INFO - 2017-04-26 02:49:35 --> Config Class Initialized
+INFO - 2017-04-26 02:49:35 --> Hooks Class Initialized
+DEBUG - 2017-04-26 02:49:35 --> UTF-8 Support Enabled
+INFO - 2017-04-26 02:49:35 --> Utf8 Class Initialized
+INFO - 2017-04-26 02:49:35 --> URI Class Initialized
+INFO - 2017-04-26 02:49:35 --> Router Class Initialized
+INFO - 2017-04-26 02:49:35 --> Output Class Initialized
+INFO - 2017-04-26 02:49:35 --> Security Class Initialized
+DEBUG - 2017-04-26 02:49:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2017-04-26 02:49:36 --> Input Class Initialized
+INFO - 2017-04-26 02:49:36 --> Language Class Initialized
+INFO - 2017-04-26 02:49:36 --> Loader Class Initialized
+INFO - 2017-04-26 02:49:36 --> Helper loaded: form_helper
+INFO - 2017-04-26 02:49:36 --> Controller Class Initialized
+ERROR - 2017-04-26 02:49:36 --> Unable to load the requested class: Log
